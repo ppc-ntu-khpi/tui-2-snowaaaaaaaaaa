@@ -1,22 +1,35 @@
-# UI Lab 2 
-![](terminal-icon.png)
-![](gui-icon.png)
+# TUIdemo Project
 
-Це одна з робіт, які доповнюють основний цикл лабораторних робіт #1-8 (проект **Banking**, [Netbeans](https://netbeans.org/)) з ООП.  Основна мета цих додаткових вправ - познайомитись з різними видами інтерфейсів користувача та засобами їх створення. Згадувані 'базові' роботи розміщено в [окремому репозиторії](https://github.com/liketaurus/OOP-JAVA) (якщо будете робити завдання на "4" або "5" раджу переглянути [діаграму класів](https://github.com/liketaurus/OOP-JAVA/blob/master/MyBank.png), аби розуміти які методи є у класів).
+# Dvorovenko Max
 
-В ході першої роботи вам пропонується виконати **наступне завдання** - [Робота 2: CLI з jline 3](https://github.com/ppc-ntu-khpi/TUI-Lab2-Starter/blob/master/Lab%202%20-%20CLI/Lab%202.md)
-  
-**Додаткове завдання** (для тих хто зробив все і прагне більшого): [дивіться тут](https://github.com/ppc-ntu-khpi/TUI-Lab2-Starter/blob/master/Lab%202%20-%20CLI/Lab%202%20-%20add.md)
+This project demonstrates a Text User Interface (TUI) application for a bank, built using Java.
 
-Всі необхідні бібліотеки містяться у теці [jars](https://github.com/ppc-ntu-khpi/TUI-Lab2-Starter/tree/master/jars). В тому числі - всі необхідні відкомпільовані класи з робіт 1-8 - файл [MyBank.jar](https://github.com/ppc-ntu-khpi/TUI-Lab2-Starter/blob/master/jars/MyBank.jar). Файл даних лежить у теці [data](https://github.com/ppc-ntu-khpi/TUI-Lab2-Starter/tree/master/data).
+## Project Setup
 
----
-**УВАГА! Не забуваємо здавати завдання через Google Classroom та вказувати посилання на створений для вас репозиторій!**
+1. Download the necessary JAR files: `jline`, `jansi`, and `MyBank`.
+2. Create a new project named `TUIdemo` in NetBeans without a main class.
+3. Add the downloaded JAR files to the project's libraries: Right-click on the project, select Properties > Libraries > Add JAR/Folder.
+4. Add the `CLIdemo.java` file from this repository to the project.
+5. Study the source code in the `CLIdemo.java` file to understand how it works.
 
-Також пам'ятайте, що ніхто не заважає вам редагувати файл README у вашому репозиторії😉.
-А ще - дуже раджу спробувати нову фічу - інтеграцію з IDE REPL.it (хоч з таким завданням вона може й не впоратись, однак, цікаво ж!).
+## Running the Application
 
-![](https://img.shields.io/badge/Made%20with-JAVA-red.svg)
-![](https://img.shields.io/badge/Made%20with-%20Netbeans-brightgreen.svg)
-![](https://img.shields.io/badge/Made%20at-PPC%20NTU%20%22KhPI%22-blue.svg) 
-[![Gitter](https://badges.gitter.im/PPC-SE-2020/OOP.svg)](https://gitter.im/PPC-SE-2020/OOP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+1. Open a console (terminal or PowerShell) and navigate to the project directory.
+2. Run the project using the command `java -jar TUIdemo.jar`.
+3. You should see a prompt `(bank>)`.
+4. Use TAB to view available commands, type `h TAB ENTER` for help, `cus TAB s ENTER` to view the list of bank customers, `Up Backspace Space 1 ENTER` to view information about customer number 1, `Up 2 ENTER` to test incorrect customer number handling, and `e TAB ENTER` to exit.
+5. Ensure that the application behaves as expected.
+
+![image](https://github.com/ppc-ntu-khpi/tui-2-snowaaaaaaaaaa/assets/144525592/2765eaf5-b751-4642-8dfc-e2fd079cecb1)
+
+## Additional Command: `report`
+
+Add a new command `report` to the application, which should display a report of customers similar to the CustomerReport in Task 8.
+
+![image](https://github.com/ppc-ntu-khpi/tui-2-snowaaaaaaaaaa/assets/144525592/b4baa770-0bdc-4503-850a-e4b59b315417)
+
+## Testing
+
+1. Run the project and ensure everything works as expected.
+2. Demonstrate the functionality to the instructor.
+
